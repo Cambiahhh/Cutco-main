@@ -1,0 +1,4 @@
+projects/
+.qoder/
+__pycache__/
+*.pyc
