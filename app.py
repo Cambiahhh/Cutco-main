@@ -93,15 +93,15 @@ def create_project():
 def _extract_intake_from_text(text: str) -> dict:
     """Best-effort extraction of structured fields from guide-chip-enriched text."""
     mapping = {
-        "📺 目标平台：": "target_platform",
-        "🌍 交付语言：": "delivery_languages",
-        "🎯 验收标准：": "acceptance_focus",
-        "🎨 风格目标：": "style_goals",
-        "⛔ 明确禁忌：": "avoid_list",
-        "👥 目标受众：": "audience",
-        "🧪 本轮 demo 要证明：": "demo_goal",
-        "⏰ 时间要求：": "deadline",
-        "🔗 参考链接：": "references",
+        "📺 交付目标平台：": "target_platform",
+        "🌍 目标语言/区域：": "delivery_languages",
+        "🎯 核心验收标准：": "acceptance_focus",
+        "🎨 视觉风格参考：": "style_goals",
+        "⛔ 禁忌项说明：": "avoid_list",
+        "👥 目标受众画像：": "audience",
+        "🧪 技术参数要求：": "demo_goal",
+        "⏰ 期望交付时效：": "deadline",
+        "🔗 参考资料：": "references",
     }
     result: dict[str, str] = {}
     for prefix, key in mapping.items():

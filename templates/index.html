@@ -522,7 +522,7 @@
 
         function insertGuideChips() {
             const textarea = document.getElementById('request_text');
-            const chips = `📺 交付目标平台：\n🌍 目标语言/区域：\n🎯 核心验收标准：\n🎨 视觉风格参考：\n⛔ 禁忌项说明：\n👥 目标受众画像：\n🧪 技术参数要求：\n⏰ 期望交付时效：\n`;
+            const chips = `📺 交付目标平台：\n🌍 目标语言/区域：\n🎯 核心验收标准：\n🎨 视觉风格参考：\n⛔ 禁忌项说明：\n👥 目标受众画像：\n🧪 技术参数要求：\n⏰ 期望交付时效：\n🔗 参考资料：\n`;
             if (textarea && !textarea.value.includes('📺 交付目标平台：')) {
                 textarea.value = chips + '\n' + textarea.value;
                 textarea.focus();
